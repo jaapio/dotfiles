@@ -1,0 +1,38 @@
+{
+	"default_module": "powerline.segments.common",
+	"segment_data": {
+        "branch": {
+            "before": " ",
+            "args": {
+               "status_colors": true
+            }
+        },
+         "cwd": {
+            "args": {
+                "use_path_separator": true,
+                "dir_limit_depth": 3
+            }
+        }
+	},
+	"segments": {
+        "left": [
+        ],
+
+		"right": [
+			{
+				"name": "system_load",
+				"priority": 50
+			},
+			{
+				"name": "date",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+            {
+                "name": "branch"
+            }
+		]
+	}
+}
