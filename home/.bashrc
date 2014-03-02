@@ -248,6 +248,9 @@ case $TERM in
  ;;
 esac
 }
+
+alias composer-local="COMPOSER=local-composer.json composer"
+alias passphrase="exec ssh-agent /bin/bash"
 export PATH="~/.local/bin:$PATH"
 export POWERLINE_COMMAND="powerline"
 
