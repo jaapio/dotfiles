@@ -253,6 +253,6 @@ alias composer-local="COMPOSER=local-composer.json composer"
 alias passphrase="exec ssh-agent /bin/bash"
 export PATH="~/.local/bin:$PATH"
 export POWERLINE_COMMAND="powerline"
-
+export TERM=xterm-256color
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
