@@ -254,5 +254,7 @@ alias passphrase="exec ssh-agent /bin/bash"
 export PATH="~/.local/bin:$PATH"
 export POWERLINE_COMMAND="powerline"
 export TERM=xterm-256color
+export APP_ENV="development"
+
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
