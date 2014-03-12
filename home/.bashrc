@@ -245,7 +245,7 @@ function __git_project() {
 
 alias composer-local="COMPOSER=local-composer.json composer"
 alias passphrase="exec ssh-agent /bin/bash"
-export PATH="~/.local/bin:~/bin:$PATH"
+export PATH="~/.local/bin:~/bin:./vendor/bin:$PATH"
 export POWERLINE_COMMAND="powerline"
 export TERM=xterm-256color
 export APP_ENV="development"

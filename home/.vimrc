@@ -7,6 +7,7 @@ call vundle#rc()
 "{{{ Vundle Bundles!
 if exists(':Bundle')
     Bundle 'Syntastic'
+    Bundle 'joonty/vim-phpqa.git'
 end
 "}}}
 
@@ -17,3 +18,5 @@ set expandtab      " tabs are converted to spaces, use only when required
 syntax on           " syntax highlighing
 
 let php_short_tags = 0
+let g:phpqa_codesniffer_args = "--standard=PSR2"
+set tags=/home/otterdijk/projects/youngguns/library/php.tags
