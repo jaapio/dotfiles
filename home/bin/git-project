@@ -1,5 +1,5 @@
 #!/bin/bash
-masterRemote=`git config --get branch.master.remote`
+masterRemote=`git config --get branch.develop.remote`
 if [ -n "$masterRemote" ]; then
 basename $(git config --get remote.${masterRemote}.url) | cut -f1 -d"." 
 else
