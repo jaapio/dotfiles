@@ -233,20 +233,14 @@ fi)'
 export VAGRANT_HOME=/media/Media/virtualbox
 
 function __git_project() {
-case $TERM in
- xterm*|rxvt*)
- ;;
- screen*)
-    git branch &>/dev/null;
-    if [ $? -eq 0 ]; then 
-        tmux rename-window `git-project`
-    else
-        tmux set-window-option automatic-rename "on" 1>/dev/null    
+    if [ -n "$TMUX" ]; then 
+       git branch &>/dev/null;
+       if [ $? -eq 0 ]; then 
+           tmux rename-window `git-project`
+       else
+           tmux set-window-option automatic-rename "on" 1>/dev/null    
+       fi
     fi
- ;;
- *)
- ;;
-esac
 }
 
 alias composer-local="COMPOSER=local-composer.json composer"
