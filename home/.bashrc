@@ -245,6 +245,7 @@ function __git_project() {
 
 alias composer-local="COMPOSER=local-composer.json composer"
 alias passphrase="exec ssh-agent /bin/bash"
+alias copybuffer="tmux show-buffer | xclip -sel clip -i"
 export PATH="~/.local/bin:~/bin:./vendor/bin:$PATH"
 export POWERLINE_COMMAND="powerline"
 export TERM=xterm-256color
