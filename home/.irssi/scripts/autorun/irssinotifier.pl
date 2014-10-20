@@ -1,0 +1,1 @@
+/home/otterdijk/.irssi/scripts/irssinotifier.pl
