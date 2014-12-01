@@ -198,14 +198,11 @@ statusbar = {
   };
 };
 settings = {
-  core = {
-    real_name = "Jaap";
-    user_name = "jaapio";
-    nick = "jaapio";
-  };
+  core = { real_name = "Jaap"; user_name = "jaapio"; nick = "jaapio"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "xchat"; };
   "perl/core/scripts" = {
+    nicklist_width = "20";
     nicklist_automode = "fifo";
     awl_shared_sbar = "OFF";
     awl_viewer = "no";
