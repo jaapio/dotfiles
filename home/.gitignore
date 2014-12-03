@@ -2,3 +2,4 @@ local-composer.json
 local-composer.lock
 data/DoctrineORMModule/
 *.swp
+/nbproject/
