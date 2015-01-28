@@ -3,3 +3,4 @@ local-composer.lock
 data/DoctrineORMModule/
 *.swp
 /nbproject/
+.idea/
