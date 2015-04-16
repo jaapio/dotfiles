@@ -1,29 +1,21 @@
 {
-	"default_module": "powerline.segments.common",
-	"segment_data": {
-         "cwd": {
-            "args": {
-                "use_path_separator": true,
-                "dir_limit_depth": 3
-            }
-        }
-	},
 	"segments": {
-        "left": [
-        ],
-
 		"right": [
 			{
-				"name": "system_load",
+				"function": "powerline.segments.common.sys.system_load",
 				"priority": 50
 			},
 			{
-				"name": "date",
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
 				"args": {
 					"format": "%H:%M",
 					"istime": true
 				}
-			}
+            }
 		]
 	}
 }
