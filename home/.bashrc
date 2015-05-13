@@ -247,7 +247,7 @@ alias composer-local="COMPOSER=local-composer.json composer"
 alias copybuffer="tmux show-buffer | xclip -sel clip -i"
 export PATH="~/.local/bin:~/bin:./vendor/bin:$PATH"
 export POWERLINE_COMMAND="powerline"
-export TERM=xterm-256color
+export TERM=screen-256color
 export APP_ENV="development"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
