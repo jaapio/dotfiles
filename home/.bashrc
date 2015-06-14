@@ -230,8 +230,6 @@ else \
   echo " '$Yellow$PathShort$Color_Off'\$ "; \
 fi)'
 
-export VAGRANT_HOME=/media/Media/virtualbox
-
 function __git_project() {
     if [ -n "$TMUX" ]; then 
        git branch &>/dev/null;
