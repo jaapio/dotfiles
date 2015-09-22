@@ -4,7 +4,7 @@
 [core]
 	autocrlf = input
 	editor = vim
-	excludesfile = /home/otterdijk/.gitignore
+	excludesfile = ~/.gitignore
 	preloadindex = true
 [color]
 	ui = true
