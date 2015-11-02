@@ -1,6 +1,6 @@
 local-composer.json
 local-composer.lock
-data/DoctrineORMModule/
+data/DoctrineORMModule/Proxy
 *.swp
 /nbproject/
 .idea/

@@ -119,6 +119,10 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
+
+  if [ -f ~/.bash_completion.d/ ]; then
+    . ~/.bash_completion.d
+  fi
 fi
 
 
