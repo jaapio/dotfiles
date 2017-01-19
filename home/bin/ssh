@@ -596,8 +596,8 @@ class AgentManager(object):
 def main(argv):
   # Replace stdout and stderr with /dev/tty, so we don't mess up with scripts
   # that use ssh in case we error out or similar.
-  sys.stdout = open("/dev/tty", "w")
-  sys.stderr = open("/dev/tty", "w")
+  #sys.stdout = open("/dev/tty", "w")
+  #sys.stderr = open("/dev/tty", "w")
 
   config = Config().Load()
   identity = FindIdentity(argv, config)
