@@ -15,6 +15,9 @@
 		"branch": {
 			"before": "BR "
 		},
+		"stash": {
+			"before": "ST "
+		},
 		"cwd": {
 			"args": {
 				"ellipsis": "..."
@@ -51,7 +54,9 @@
 		"powerline.segments.common.bat.battery": {
 			"args": {
 				"full_heart": "O",
-				"empty_heart": "O"
+				"empty_heart": "O",
+				"online": "C",
+				"offline": " "
 			}
 		},
 		"powerline.segments.common.sys.uptime": {
@@ -128,6 +133,15 @@
 		"powerline.segments.vim.modified_indicator": {
 			"args": {
 				"text": "+"
+			}
+		},
+
+		"powerline.segments.i3wm.scratchpad": {
+			"args": {
+				"icons": {
+					"fresh": "O",
+					"changed": "X"
+				}
 			}
 		}
 	}

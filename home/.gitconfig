@@ -1,6 +1,7 @@
 [user]
 	name = Jaapio
 	email = jaap@ijaap.nl
+	signingkey = B3071FFC8AC5864F
 [core]
 	autocrlf = input
 	editor = vim
