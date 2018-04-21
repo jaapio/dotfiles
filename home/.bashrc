@@ -245,7 +245,6 @@ function __git_project() {
     fi
 }
 
-alias composer-local="COMPOSER=local-composer.json composer"
 alias copybuffer="tmux show-buffer | xclip -sel clip -i"
 export PATH="~/.local/bin:~/bin:./vendor/bin:$PATH"
 export POWERLINE_COMMAND="powerline"

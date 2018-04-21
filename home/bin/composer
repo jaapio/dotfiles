@@ -1,0 +1,21 @@
+#!/bin/bash
+
+composer () {
+    tty=
+    tty -s && tty=--tty
+    docker run \
+        $tty \
+        --interactive \
+        --rm \
+        --user $(id -u):$(id -g) \
+        --volume $SSH_AUTH_SOCK:/ssh-auth.sock \
+        --volume /etc/passwd:/etc/passwd:ro \
+        --volume /etc/group:/etc/group:ro \
+        --volume $HOME/.composer:/composer \
+        --volume $(pwd):/app \
+        --env SSH_AUTH_SOCK=/ssh-auth.sock \
+        --env COMPOSER_HOME=/composer \
+        composer "$@"
+}
+
+composer 
