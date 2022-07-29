@@ -1,0 +1,20 @@
+#!/bin/bash
+
+PROFILE=${1:-"default"}
+
+if [ -z "$1" ]; then
+  echo "No argument passed, switching to default"
+fi
+
+
+CONFIG_FILE="$HOME/.composer/config.json-$PROFILE"
+
+if [ ! -f "$CONFIG_FILE" ]; then
+  echo "$CONFIG_FILE does not exist"
+  exit 1;
+fi
+
+rm "$HOME/.composer/config.json"
+ln -s $CONFIG_FILE "$HOME/.composer/config.json"
+
+echo "Using profile $PROFILE"
