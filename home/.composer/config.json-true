@@ -1,0 +1,10 @@
+{
+    "config": {},
+    "repositories": {
+        "true_gitlab": {
+          "type": "composer",
+          "url": "https://gitlab.true.nl/api/v4/group/20/-/packages/composer/packages.json"
+        }
+    },
+    "gitlab-domains": ["gitlab.com", "gitlab.true.nl"] 
+}
