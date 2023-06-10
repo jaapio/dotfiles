@@ -1,7 +1,7 @@
 [user]
 	name = Jaapio
 	email = jaap@ijaap.nl
-	signingkey = B3071FFC8AC5864F
+	signingKey = 4EF9CF7C2784EED235E3658E38BDF7E9926863E0
 [core]
 	autocrlf = input
 	editor = vim
@@ -13,11 +13,20 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate
 	logtree = log --graph --oneline --decorate --all
 	createtag = tag -a
-	removebranch = !sh -c 'git branch -d $0' 
-        removemerged = !sh -c 'git branch --merged $0 | grep -v $0 | grep -v develop | grep -v master | xargs -I "{}" git removebranch "{}"' 
+    removebranch = !sh -c 'git branch -d $0'
+    removemerged = !sh -c 'git branch --merged $0 | grep -v $0 | grep -v develop | grep -v master | xargs -I "{}" git removebranch "{}"' 
 	reduce-to-subfolder = !sh -c 'git filter-branch --tag-name-filter cat --prune-empty --subdirectory-filter cookbooks/unicorn HEAD && git reset --hard && git for-each-ref refs/original/ | cut -f 2 | xargs -n 1 git update-ref -d && git reflog expire --expire=now --all && git gc --aggressive --prune=now && git remote rm origin'
 	cp = !bash -c 'git checkout $0 && git pull'
 [push]
 	default = upstream
+[pull]
+    rebase = true
+[rebase]
+    autoStash = true
+[rerere]
+    enabled = true
 [init]
 	templatedir = ~/.git-templates
+	defaultBranch = main
+[commit]
+	gpgsign = true

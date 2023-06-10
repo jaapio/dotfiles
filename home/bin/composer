@@ -15,7 +15,7 @@ composer () {
         --volume $(pwd):/app \
         --env SSH_AUTH_SOCK=/ssh-auth.sock \
         --env COMPOSER_HOME=/composer \
-        composer "$@"
+        composer:2 "$@"
 }
 
-composer 
+composer $@ 

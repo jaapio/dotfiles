@@ -15,6 +15,6 @@ if [ ! -f "$CONFIG_FILE" ]; then
 fi
 
 rm "$HOME/.composer/config.json"
-ln -s $CONFIG_FILE "$HOME/.composer/config.json"
+cp $CONFIG_FILE "$HOME/.composer/config.json"
 
 echo "Using profile $PROFILE"

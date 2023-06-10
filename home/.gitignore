@@ -4,3 +4,6 @@ data/DoctrineORMModule/Proxy
 *.swp
 /nbproject/
 .idea/
+docker-compose.override.yml
+*.backup
+acceptance.pub
