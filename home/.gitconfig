@@ -30,3 +30,8 @@
 	defaultBranch = main
 [commit]
 	gpgsign = true
+[log]
+	follow = true
+
+[includeif "gitdir:~/projects/tilaa/"]
+   path = ~/projects/tilaa/.gitconfig
