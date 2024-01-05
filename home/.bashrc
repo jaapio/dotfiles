@@ -245,7 +245,8 @@ complete -o default -F __start_kubectl k
 
 alias g=git
 alias ga="git add"
-alias gp="git pull origin HEAD"
+alias gpull="git pull origin HEAD"
+alias gpush="git push origin HEAD"
 alias gs="git status"
 alias gap="git add -p"
 __git_complete g __git_main
