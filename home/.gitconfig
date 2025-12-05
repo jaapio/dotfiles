@@ -35,3 +35,10 @@
 
 [includeif "gitdir:~/projects/tilaa/"]
    path = ~/projects/tilaa/.gitconfig
+[difftool]
+	prompt = false
+[diff]
+	tool = difft
+	external = difft
+[pager]
+	difftool = true

@@ -245,10 +245,11 @@ complete -o default -F __start_kubectl k
 
 alias g=git
 alias ga="git add"
-alias gpull="git pull origin HEAD"
-alias gpush="git push origin HEAD"
+alias gp="git pull origin HEAD"
+alias gd="git push origin HEAD"
 alias gs="git status"
 alias gap="git add -p"
 __git_complete g __git_main
 __git_complete ga git_add
 
+. "$HOME/.cargo/env"
